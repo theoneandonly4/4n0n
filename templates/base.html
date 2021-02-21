@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>4n0n - Privacy & Security</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+  <div class="block" id="header">
+    <span><a href="/"><h1> 4n0n - Privacy & Security </h1></a></span>
+    <span><h2>{% block pagetitle %} Base Page {% endblock pagetitle %}</h2></span>
+  </div>
+  <div class="block" id="content">
+    {% block content %}
+    <p>Welcome to 4n0n, your one and only source into the scandalous life of your personal data</p>
+    {% endblock content %}
+  </div>
+
+  <div class="block" id="content2">
+    {% block content2 %}
+    <p>This is the Base Template and should not be displayed</p>
+    {% endblock content2 %}
+  </div>
+
+</body>
+</html>
